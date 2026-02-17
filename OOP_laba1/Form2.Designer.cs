@@ -35,6 +35,10 @@
 
         private System.Windows.Forms.Label label_Info;
 
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             this.tableLayoutPanel_Main = new System.Windows.Forms.TableLayoutPanel();
@@ -120,14 +124,7 @@
             // 
             // comboBox
             // 
-            this.comboBox.Items.AddRange(new object[] {
-            "Название",
-            "Местоположение",
-            "Полетов за день",
-            "Продано билетов за день",
-            "Баланс",
-            "Рейтинг аэропорта",
-            "Количество работников"});
+            this.comboBox.Items.AddRange(new object[] { "Название", "Местоположение", "Полетов за день", "Продано билетов за день", "Баланс", "Рейтинг аэропорта", "Количество работников" });
             this.comboBox.Location = new System.Drawing.Point(10, 20);
             this.comboBox.Name = "comboBox";
             this.comboBox.Size = new System.Drawing.Size(121, 21);
@@ -152,11 +149,7 @@
             // 
             this.numericUpDown_Balance.DecimalPlaces = 2;
             this.numericUpDown_Balance.Location = new System.Drawing.Point(180, 20);
-            this.numericUpDown_Balance.Maximum = new decimal(new int[] {
-            1569325056,
-            23283064,
-            0,
-            0});
+            this.numericUpDown_Balance.Maximum = new decimal(new int[] { 1569325056, 23283064, 0, 0 });
             this.numericUpDown_Balance.Name = "numericUpDown_Balance";
             this.numericUpDown_Balance.Size = new System.Drawing.Size(200, 20);
             this.numericUpDown_Balance.TabIndex = 3;
@@ -165,11 +158,7 @@
             // numericUpDown_FlightsPerDay
             // 
             this.numericUpDown_FlightsPerDay.Location = new System.Drawing.Point(180, 20);
-            this.numericUpDown_FlightsPerDay.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
+            this.numericUpDown_FlightsPerDay.Maximum = new decimal(new int[] { 1215752192, 23, 0, 0 });
             this.numericUpDown_FlightsPerDay.Name = "numericUpDown_FlightsPerDay";
             this.numericUpDown_FlightsPerDay.Size = new System.Drawing.Size(200, 20);
             this.numericUpDown_FlightsPerDay.TabIndex = 4;
@@ -177,11 +166,7 @@
             // numericUpDown_TicketsSold
             // 
             this.numericUpDown_TicketsSold.Location = new System.Drawing.Point(180, 20);
-            this.numericUpDown_TicketsSold.Maximum = new decimal(new int[] {
-            276447232,
-            23283,
-            0,
-            0});
+            this.numericUpDown_TicketsSold.Maximum = new decimal(new int[] { 276447232, 23283, 0, 0 });
             this.numericUpDown_TicketsSold.Name = "numericUpDown_TicketsSold";
             this.numericUpDown_TicketsSold.Size = new System.Drawing.Size(200, 20);
             this.numericUpDown_TicketsSold.TabIndex = 5;
@@ -190,11 +175,7 @@
             // 
             this.numericUpDown_Rating.DecimalPlaces = 2;
             this.numericUpDown_Rating.Location = new System.Drawing.Point(180, 20);
-            this.numericUpDown_Rating.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
-            0,
-            0});
+            this.numericUpDown_Rating.Maximum = new decimal(new int[] { -1530494976, 232830, 0, 0 });
             this.numericUpDown_Rating.Name = "numericUpDown_Rating";
             this.numericUpDown_Rating.Size = new System.Drawing.Size(200, 20);
             this.numericUpDown_Rating.TabIndex = 6;
@@ -203,11 +184,7 @@
             // numericUpDown_Employee
             // 
             this.numericUpDown_Employee.Location = new System.Drawing.Point(180, 20);
-            this.numericUpDown_Employee.Maximum = new decimal(new int[] {
-            -727379968,
-            232,
-            0,
-            0});
+            this.numericUpDown_Employee.Maximum = new decimal(new int[] { -727379968, 232, 0, 0 });
             this.numericUpDown_Employee.Name = "numericUpDown_Employee";
             this.numericUpDown_Employee.Size = new System.Drawing.Size(200, 20);
             this.numericUpDown_Employee.TabIndex = 7;
@@ -219,6 +196,7 @@
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 8;
             this.saveButton.Text = "Сохранить";
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // tableLayoutPanel_Bottom
             // 
@@ -272,7 +250,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Employee)).EndInit();
             this.tableLayoutPanel_Bottom.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
         #endregion
