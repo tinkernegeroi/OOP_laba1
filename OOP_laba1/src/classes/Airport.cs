@@ -72,13 +72,21 @@ namespace OOP_laba1
 
         public override string ToString()
         {
-            return $"Airport: {Name},\n" +
-                $" Location: {Location},\n" +
-                $" Flights/Day: {FlightsPerDay},\n" +
-                $" Tickets Sold: {TicketsSold},\n" +
-                $" Balance: {Balance:C},\n" +
-                $" International: {Rating},\n" +
-                $" Employees: {EmployeesCount}";
+            return $"Аэропорт: {Name},\n" +
+                   $" Местоположение: {Location},\n" +
+                   $" Полетов за день: {FlightsPerDay},\n" +
+                   $"Полетов за день HEX: {GetFlightsPerDayHex()}, \n" +
+                   $" Продано билетов за день: {TicketsSold},\n" +
+                   $" Баланс: {Balance:C},\n" +
+                   $" Рейтинг: {Rating},\n" +
+                   $" Количество сотрудников: {EmployeesCount}, \n" +
+                   $"Объектов создано: {ObjectsCount}";
+
+        }
+        
+        public string GetFlightsPerDayHex()
+        {
+            return FlightsPerDay.ToString("X");
         }
     }
 }
