@@ -3,7 +3,7 @@
 
 namespace OOP_laba1
 {
-    internal class Airport
+    public class Airport
     {
         public static int ObjectsCount { get; private set; } = 0;
 
